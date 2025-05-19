@@ -78,19 +78,17 @@ const timelineSections = [
             ["1736–1739 EC", "Interação com Sauron, que envia mensagem urgente para Erebor e deixa o grupo em missão independente."],
             ["1736–1739 EC", "Grupo se encontra com Olivia, que revela novas pistas e a ameaça crescente de Edward."],
             ["1736–1739 EC", "Rituais e sonhos proféticos conectam Marceline, Ezio e outros ao plano de fundo da guerra."],
-            ["1736–1739 EC", "Revelações sobre faeria, profecias das raças, e ameaças ao equilíbrio mágico."]
+            ["1736–1739 EC", "Revelações sobre faeria, profecias das raças, e ameaças ao equilíbrio mágico."],
+            ["1736–1739 EC", "Batalha final contra Edward e ascenção de Marceline como deusa do multiverso."],
         ]
     },
     {
         title: '🌑 Saga das Duplicatas (Campanha Atual – 1740 EC)',
         events: [
-            ["1740 EC", "Campanha Atual – Sessões 1 a 8 — Endrick, Khrogan, Emma, Rudy, James, Alain."],
+            ["1740 EC", "Campanha Atual – Endrick, Khrogan, Emma, Rudy, James, Alain."],
             ["1740 EC", "Principais eventos — Visões do passado, Cristal da Vida, conflitos com viajantes, memórias emergem, Parlamento interfere, monstros petrificados."],
             ["1739–1740 EC", "Confronto em Surass contra seita de transmutadores. Assassinato misterioso investigado. Descoberta de rituais envolvendo transmutação forçada de humanos."],
-            ["1740 EC", "Entrada no castelo com Holkar. Encontro com Olivia e Zoe. Confronto com Edward em outro plano. Sacrifício ilusório de Olivia. Edward acredita ter vencido. Realidade moldada. Aparece Lorian, abre o Caminho."],
             ["1740 EC", "Visões de Marceline e Ezio revelam pactos divinos com entidades elementares (água e eletricidade). Revelações sobre as experiências com licantropos e origem de Jader e Janna."],
-            ["1740 EC", "Resgate de Marco. Encontro com Adalind Evans II. Viagem pelas montanhas de Montehara. Visita a vilas como Elbrus e Koryng. Dungeon de Carlisle Al-Ghul."],
-            ["1740 EC", "Prelúdio da Crise Multiversal. Lorian abre portal psíquico com auroras. Visões e revelações de que as ações até agora foram tentativas de impedir o Ragnarok. Última chance para impedir o colapso total do multiverso."]
         ]
     }
 ];
@@ -105,7 +103,7 @@ function createModal() {
         <div class="modal" tabindex="-1">
             <button class="modal-close" id="modal-close" title="Fechar">×</button>
             <div class="modal-title" id="modal-title"></div>
-            <ul class="modal-events" id="modal-events"></ul>
+            <div class="modal-events" id="modal-events"></div>
         </div>
     `;
     document.body.appendChild(modalBg);
@@ -125,13 +123,13 @@ function createModal() {
 function showModal(section) {
     createModal();
     document.getElementById('modal-title').textContent = section.title;
-    const ul = document.getElementById('modal-events');
-    ul.innerHTML = '';
+    const eventsDiv = document.getElementById('modal-events');
+    eventsDiv.innerHTML = '';
     section.events.forEach(([date, desc]) => {
-        const li = document.createElement('li');
-        li.className = 'modal-event';
-        li.innerHTML = `<span class="event-date">${date}</span><span class="event-desc">${desc}</span>`;
-        ul.appendChild(li);
+        const div = document.createElement('div');
+        div.className = 'modal-event';
+        div.innerHTML = `<span class="event-date">${date}</span><span class="event-desc">${desc}</span>`;
+        eventsDiv.appendChild(div);
     });
     document.getElementById('modal-bg').classList.add('active');
     document.querySelector('.modal').focus();
