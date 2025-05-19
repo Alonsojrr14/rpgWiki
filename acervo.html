@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo & Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <span class="navbar-title">Portal do RPG</span>
+            <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Abrir menu">☰</button>
+            <div class="navbar-links" id="navbar-links">
+                <a class="navbar-link" href="index.html">Início</a>
+                <a class="navbar-link" href="timeline.html">🗓️ Linha do Tempo</a>
+                <a class="navbar-link" href="deuses.html">⚡ Panteão</a>
+                <a class="navbar-link" href="personagens.html">👤 Personagens</a>
+                <a class="navbar-link" href="acervo.html">📚 Acervo</a>
+            </div>
+        </div>
+    </nav>
+    <div class="acervo-page-container">
+        <h1>Acervo & Biblioteca</h1>
+        <h2>Livros do Universo</h2>
+        <div class="acervo-grid">
+            <button class="acervo-card" id="marcelineBtn" type="button">
+                <strong>Diário de Marceline</strong>
+                <div class="acervo-info">Autora desconhecida</div>
+            </button>
+            <button class="acervo-card" id="zoeHurtBtn" type="button">
+                <strong>Zoe Hurt</strong>
+                <div class="acervo-info">A.A. Wolff</div>
+            </button>
+            <button class="acervo-card" id="joshRosfieldBtn" type="button">
+                <strong>Josh Rosfield</strong>
+                <div class="acervo-info">Alaster Crowley</div>
+            </button>
+            <button class="acervo-card" id="emmaBtn" type="button">
+                <strong>Guia do Usuário: Manual do Projeto M01</strong>
+                <div class="acervo-info">Marceline Abadeer</div>
+            </button>
+            <button class="acervo-card" id="testeBtn" type="button">
+                <strong>Lorem ipsum dolor sit amet</strong>
+                <div class="acervo-info">Lorem ipsum dolor sit amet</div>
+            </button>
+            <button class="acervo-card" id="testeBtn" type="button">
+                <strong>Lorem ipsum dolor sit amet</strong>
+                <div class="acervo-info">Lorem ipsum dolor sit amet</div>
+            </button>
+            <button class="acervo-card" id="testeBtn" type="button">
+                <strong>Lorem ipsum dolor sit amet</strong>
+                <div class="acervo-info">Lorem ipsum dolor sit amet</div>
+            </button>
+            <button class="acervo-card" id="testeBtn" type="button">
+                <strong>Lorem ipsum dolor sit amet</strong>
+                <div class="acervo-info">Lorem ipsum dolor sit amet</div>
+            </button>
+            <button class="acervo-card" id="testeBtn" type="button">
+                <strong>Lorem ipsum dolor sit amet</strong>
+                <div class="acervo-info">Lorem ipsum dolor sit amet</div>
+            </button>
+            <!-- Livro exemplo anterior -->
+
+
+        </div>
+    </div>
+    <!-- Modal do livro Zoe Hurt -->
+    <div class="modal-bg" id="modal-zoe" tabindex="-1">
+        <div class="modal" style="max-width: 540px;">
+            <button class="modal-close" id="close-zoe" title="Fechar">×</button>
+            <div class="modal-title">Zoe Hurt</div>
+            <div class="modal-events">
+                <div class="modal-event"><b>Autor:</b> A.A. Wolff</div>
+                <div class="modal-event"><b>Sinopse:</b> Zoe Hurt, jovem psiônica de 18 anos, vive com a avó e o irmão Zenon após perder os pais na guerra. Treinada desde pequena para se defender, Zoe tem uma ligação profunda com a natureza e com sua coruja Aysha. Quando a avó adoece, Zoe assume o dever de servir ao reino, enfrentando o peso de uma dívida antiga e desafios de poder, família e autodescoberta.</div>
+                <div class="modal-event"><b>Temas:</b> Herança psíquica, amor familiar, sacrifício, crescimento pessoal, opressão social, conexão com a natureza.</div>
+                <div class="modal-event"><b>Citação:</b><br><em>"O que está escondido nem sempre escolheu isso, muitas vezes está apenas esperando ser encontrado para mostrar o caminho que foi perdido, olhe com atenção e irá encontrar o que não procura."</em><br>– A.A. Wolff, o Pai perdido</div>
+                <div class="modal-event" style="text-align:center; margin-top:18px;">
+                    <a href="assets/books/zoeHurt.pdf" download class="download-btn">📥 Baixar PDF do Livro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal do Diário de Marceline -->
+    <div class="modal-bg" id="modal-marceline" tabindex="-1">
+        <div class="modal" style="max-width: 540px;">
+            <button class="modal-close" id="close-marceline" title="Fechar">×</button>
+            <div class="modal-title">Diário de Marceline</div>
+            <div class="modal-events">
+                <div class="modal-event"><b>Autora:</b> Desconhecida (formato de diário)</div>
+                <div class="modal-event"><b>Sinopse:</b> Marceline é uma Deusa do Multiverso que enfrenta um profundo vazio existencial. Embora tenha acesso a possibilidades infinitas, sente-se isolada e insatisfeita. Em sua busca por alívio, começa a trabalhar em um projeto de duplicação mágica baseado na Shinju da Hydra, uma técnica que cria duplicatas de si mesma para substituí-la em interações sociais e responsabilidades. Sua rotina muda quando é abordada por aventureiros pedindo ajuda para Emily, uma jovem elfa druida amaldiçoada. Inspirada pela esperança de Emily, Marceline tenta salvá-la criando um constructo mágico, mas o resultado é Emma, uma nova entidade. Marceline aprende sobre aceitação e novos começos.</div>
+                <div class="modal-event"><b>Temas:</b> Solidão divina e introspecção, fragilidade da alma, limites da magia, empatia, transformação pela dor, criação, fracasso, novos começos, aceitação do que se perde e acolhimento do que nasce no lugar.</div>
+                <div class="modal-event"><b>Citação:</b><br><em>"Mesmo quando nossos planos falham, há sempre espaço para novas possibilidades. Emma é um lembrete de que, mesmo em face de nossas maiores adversidades, a vida pode encontrar uma maneira de persistir e crescer."</em></div>
+                <div class="modal-event" style="text-align:center; margin-top:18px;">
+                    <a href="assets/books/diarioDeMarceline.pdf" download class="download-btn">📥 Baixar PDF do Livro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal do livro Josh Rosfield -->
+    <div class="modal-bg" id="modal-josh" tabindex="-1">
+        <div class="modal" style="max-width: 540px;">
+            <button class="modal-close" id="close-josh" title="Fechar">×</button>
+            <div class="modal-title">Josh Rosfield</div>
+            <div class="modal-events">
+                <div class="modal-event"><b>Autor:</b> Não identificado</div>
+                <div class="modal-event"><b>Sinopse:</b> Josh Rosfield, segundo filho do rei de Rosalith, vê seu reino ruir após um ataque mágico devastador que mata seu pai e faz seu irmão desaparecer. Carregado pelo dever e pela dor, Josh parte em segredo em uma jornada pelo plano material, buscando justiça, respostas sobre a tragédia e a restauração de Rosalith.</div>
+                <div class="modal-event"><b>Temas:</b> Herança, dever e honra; Luto e reconstrução pessoal; Magia ancestral e mistérios arcanos; Traição e justiça; Jornada do herói em mundo fragmentado.</div>
+                <div class="modal-event"><b>Citação:</b><br><em>"Pronto para proteger seu irmão a qualquer custo."</em></div>
+                <div class="modal-event" style="text-align:center; margin-top:18px;">
+                    <a href="assets/books/joshRosfield.pdf" download class="download-btn">📥 Baixar PDF do Livro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal do Guia do Usuário: Manual do Projeto M01 -->
+    <div class="modal-bg" id="modal-emma" tabindex="-1">
+        <div class="modal" style="max-width: 540px;">
+            <button class="modal-close" id="close-emma" title="Fechar">×</button>
+            <div class="modal-title">Guia do Usuário: Manual do Projeto M01</div>
+            <div class="modal-events">
+                <div class="modal-event"><b>Autora:</b> Marceline Abadeer</div>
+                <div class="modal-event">
+                    <b>Sinopse:</b> 
+                    Este manual apresenta o constructo mágico M01, conhecido como Emma, criado por Marceline, a Deusa do Multiverso. Emma é um ser artificial com habilidades druidicas, projetado para auxiliar magos, druidas e aventureiros em tarefas de cura, combate e manipulação da natureza. Nascida da tentativa de salvar a alma de uma elfa amaldiçoada, Emma representa a fusão entre magia, tecnologia e essência vital, sendo equipada com comandos, modos de operação e protocolos de segurança para uso responsável.
+                </div>
+                <div class="modal-event">
+                    <b>Temas:</b>
+                    <ul style="margin-top: 8px; margin-bottom: 8px;">
+                        <li>Tecnologia mágica e consciência</li>
+                        <li>Identidade artificial e legado espiritual</li>
+                        <li>A fusão entre artefato e ser</li>
+                        <li>Assistência mágica como propósito</li>
+                    </ul>
+                </div>
+                <div class="modal-event"><b>Citação:</b><br><em>"Fúria da mamãe" – Quando a criação se ergue para proteger sua origem.</em></div>
+                <div class="modal-event" style="text-align:center; margin-top:18px;">
+                    <a href="assets/books/EM01.pdf" download class="download-btn">📥 Baixar PDF do Manual</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="home-footer">&copy; 2024 ZeroByte • Portal desenvolvido para organização e consulta rápida do RPG</footer>
+    <script>
+    // Script para menu hamburguer responsivo
+    const hamburger = document.getElementById('navbar-hamburger');
+    const links = document.getElementById('navbar-links');
+    hamburger.onclick = () => {
+        links.classList.toggle('open');
+    };
+    document.querySelectorAll('.navbar-link').forEach(link => {
+        link.addEventListener('click', () => {
+            links.classList.remove('open');
+        });
+    });
+    // Modal Zoe Hurt
+    const zoeBtn = document.getElementById('zoeHurtBtn');
+    const zoeModal = document.getElementById('modal-zoe');
+    const closeZoe = document.getElementById('close-zoe');
+    zoeBtn.onclick = () => { zoeModal.classList.add('active'); zoeModal.focus(); };
+    closeZoe.onclick = () => zoeModal.classList.remove('active');
+    zoeModal.addEventListener('click', (e) => { if (e.target === zoeModal) zoeModal.classList.remove('active'); });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') zoeModal.classList.remove('active');
+    });
+    // Modal Diário de Marceline
+    const marcelineBtn = document.getElementById('marcelineBtn');
+    const marcelineModal = document.getElementById('modal-marceline');
+    const closeMarceline = document.getElementById('close-marceline');
+    marcelineBtn.onclick = () => { marcelineModal.classList.add('active'); marcelineModal.focus(); };
+    closeMarceline.onclick = () => marcelineModal.classList.remove('active');
+    marcelineModal.addEventListener('click', (e) => { if (e.target === marcelineModal) marcelineModal.classList.remove('active'); });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') marcelineModal.classList.remove('active');
+    });
+    // Modal Josh Rosfield
+    const joshBtn = document.getElementById('joshRosfieldBtn');
+    const joshModal = document.getElementById('modal-josh');
+    const closeJosh = document.getElementById('close-josh');
+    joshBtn.onclick = () => { joshModal.classList.add('active'); joshModal.focus(); };
+    closeJosh.onclick = () => joshModal.classList.remove('active');
+    joshModal.addEventListener('click', (e) => { if (e.target === joshModal) joshModal.classList.remove('active'); });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') joshModal.classList.remove('active');
+    });
+    // Modal EM01
+    const emmaBtn = document.getElementById('emmaBtn');
+    const emmaModal = document.getElementById('modal-emma');
+    const closeEmma = document.getElementById('close-emma');
+    emmaBtn.onclick = () => { emmaModal.classList.add('active'); emmaModal.focus(); };
+    closeEmma.onclick = () => emmaModal.classList.remove('active');
+    emmaModal.addEventListener('click', (e) => { if (e.target === emmaModal) emmaModal.classList.remove('active'); });
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') emmaModal.classList.remove('active');
+    });
+    
+    </script>
+</body>
+</html> 

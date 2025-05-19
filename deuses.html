@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panteão dos Deuses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <span class="navbar-title">Portal do RPG</span>
+            <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Abrir menu">☰</button>
+            <div class="navbar-links" id="navbar-links">
+                <a class="navbar-link" href="index.html">Início</a>
+                <a class="navbar-link" href="timeline.html">🗓️ Linha do Tempo</a>
+                <a class="navbar-link" href="deuses.html">⚡ Panteão</a>
+                <a class="navbar-link" href="personagens.html">👤 Personagens</a>
+                <a class="navbar-link" href="acervo.html">📚 Acervo</a>
+            </div>
+        </div>
+    </nav>
+    <div class="deuses-page-container">
+        <h1>Panteão dos Deuses</h1>
+        <div class="deuses-grid">
+            <div class="deus-card"><strong>Desty</strong><br><span class="deus-domain">Destino, tempo e profecias</span></div>
+            <div class="deus-card"><strong>Tyriër</strong><br><span class="deus-domain">Terra, natureza, animais, florestas, montanhas</span></div>
+            <div class="deus-card"><strong>Laxus</strong><br><span class="deus-domain">Céus, raios, tempestades, ar</span></div>
+            <div class="deus-card"><strong>Kyrion</strong><br><span class="deus-domain">Mares, oceanos, águas</span></div>
+            <div class="deus-card"><strong>Solaris</strong><br><span class="deus-domain">Sol, luz, dia, conquista</span></div>
+            <div class="deus-card"><strong>Serenity</strong><br><span class="deus-domain">Lua, noite, escuridão, segredos</span></div>
+            <div class="deus-card"><strong>Rowan</strong><br><span class="deus-domain">Guerra, destruição</span></div>
+            <div class="deus-card"><strong>Bessemer</strong><br><span class="deus-domain">Forja, armas</span></div>
+            <div class="deus-card"><strong>Wisz</strong><br><span class="deus-domain">Sabedoria, estratégia, justiça</span></div>
+            <div class="deus-card"><strong>Verus</strong><br><span class="deus-domain">Mensageiro, verdade, contratos</span></div>
+            <div class="deus-card"><strong>Pahrs</strong><br><span class="deus-domain">Festa, vinho, amor</span></div>
+            <div class="deus-card"><strong>Örm</strong><br><span class="deus-domain">Submundo, fogo, mortos</span></div>
+        </div>
+    </div>
+    <footer class="home-footer">&copy; 2024 ZeroByte • Portal desenvolvido para organização e consulta rápida do RPG</footer>
+    <script>
+    // Script para menu hamburguer responsivo
+    const hamburger = document.getElementById('navbar-hamburger');
+    const links = document.getElementById('navbar-links');
+    hamburger.onclick = () => {
+        links.classList.toggle('open');
+    };
+    document.querySelectorAll('.navbar-link').forEach(link => {
+        link.addEventListener('click', () => {
+            links.classList.remove('open');
+        });
+    });
+    </script>
+</body>
+</html> 

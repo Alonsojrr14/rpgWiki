@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha do Tempo RPG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <span class="navbar-title">Portal do RPG</span>
+            <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Abrir menu">☰</button>
+            <div class="navbar-links" id="navbar-links">
+                <a class="navbar-link" href="index.html">Início</a>
+                <a class="navbar-link" href="timeline.html">🗓️ Linha do Tempo</a>
+                <a class="navbar-link" href="deuses.html">⚡ Panteão</a>
+                <a class="navbar-link" href="personagens.html">👤 Personagens</a>
+                <a class="navbar-link" href="acervo.html">📚 Acervo</a>
+            </div>
+        </div>
+    </nav>
+    <div class="timeline-page-container">
+        <h1>Linha do Tempo Interativa do RPG</h1>
+        <div id="timeline"></div>
+    </div>
+    <footer class="home-footer">&copy; 2024 ZeroByte • Portal desenvolvido para organização e consulta rápida do RPG</footer>
+    <script src="script.js"></script>
+    <script>
+    // Script para menu hamburguer responsivo
+    const hamburger = document.getElementById('navbar-hamburger');
+    const links = document.getElementById('navbar-links');
+    hamburger.onclick = () => {
+        links.classList.toggle('open');
+    };
+    document.querySelectorAll('.navbar-link').forEach(link => {
+        link.addEventListener('click', () => {
+            links.classList.remove('open');
+        });
+    });
+    </script>
+</body>
+</html> 

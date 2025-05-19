@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG - Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <span class="navbar-title">Portal do RPG</span>
+            <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Abrir menu">☰</button>
+            <div class="navbar-links" id="navbar-links">
+                <a class="navbar-link" href="index.html">Início</a>
+                <a class="navbar-link" href="timeline.html">🗓️ Linha do Tempo</a>
+                <a class="navbar-link" href="deuses.html">⚡ Panteão</a>
+                <a class="navbar-link" href="personagens.html">👤 Personagens</a>
+                <a class="navbar-link" href="acervo.html">📚 Acervo</a>
+            </div>
+        </div>
+    </nav>
+    <div class="home-container">
+        <p class="home-desc">Bem-vindo ao multiverso! Aqui você encontra informações sobre o mundo, personagens, deuses, história e muito mais.</p>
+        <div class="mapa-container">
+            <h2>Mapa do Continente (Aedros):</h2>
+        <img src="assets/images/map.jpg" alt="Mapa do Continente" class="mapa-img" id="mapaImg" style="width:100%;max-width:700px;border-radius:16px;box-shadow:0 4px 24px #0005;margin:32px auto 0 auto;display:block;cursor:zoom-in;">
+    </div>
+    </div>
+    <!-- Modal de Zoom do Mapa -->
+    <div id="modalZoom" style="display:none;position:fixed;z-index:2000;top:0;left:0;width:100vw;height:100vh;background:rgba(24,24,37,0.92);align-items:center;justify-content:center;">
+        <img src="assets/images/map.jpg" alt="Mapa do Continente" style="max-width:96vw;max-height:92vh;border-radius:18px;box-shadow:0 8px 32px #000b;display:block;">
+        <button id="closeZoom" style="position:absolute;top:24px;right:38px;font-size:2.2rem;background:none;border:none;color:#ffd580;cursor:pointer;z-index:2100;">&times;</button>
+    </div>
+    <footer class="home-footer">&copy; 2024 ZeroByte • Portal desenvolvido para organização e consulta rápida do RPG</footer>
+    <script>
+    // Script para menu hamburguer responsivo
+    const hamburger = document.getElementById('navbar-hamburger');
+    const links = document.getElementById('navbar-links');
+    hamburger.onclick = () => {
+        links.classList.toggle('open');
+    };
+    // Fecha o menu ao clicar em um link (mobile)
+    document.querySelectorAll('.navbar-link').forEach(link => {
+        link.addEventListener('click', () => {
+            links.classList.remove('open');
+        });
+    });
+    </script>
+    <script>
+    // Zoom do mapa
+    const mapaImg = document.getElementById('mapaImg');
+    const modalZoom = document.getElementById('modalZoom');
+    const closeZoom = document.getElementById('closeZoom');
+    mapaImg.onclick = () => { modalZoom.style.display = 'flex'; };
+    closeZoom.onclick = () => { modalZoom.style.display = 'none'; };
+    modalZoom.onclick = (e) => { if (e.target === modalZoom) modalZoom.style.display = 'none'; };
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') modalZoom.style.display = 'none';
+    });
+    </script>
+</body>
+</html> 
