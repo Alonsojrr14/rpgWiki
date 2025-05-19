@@ -83,12 +83,12 @@ const timelineSections = [
         ]
     },
     {
-        title: '🌑 Saga das Duplicatas (Campanha Atual – 1740 EC)',
+        title: '🌑 Saga das Duplicatas (Campanha Atual – 1746 EC)',
         events: [
-            ["1740 EC", "Campanha Atual – Endrick, Khrogan, Emma, Rudy, James, Alain."],
-            ["1740 EC", "Principais eventos — Visões do passado, Cristal da Vida, conflitos com viajantes, memórias emergem, Parlamento interfere, monstros petrificados."],
-            ["1739–1740 EC", "Confronto em Surass contra seita de transmutadores. Assassinato misterioso investigado. Descoberta de rituais envolvendo transmutação forçada de humanos."],
-            ["1740 EC", "Visões de Marceline e Ezio revelam pactos divinos com entidades elementares (água e eletricidade). Revelações sobre as experiências com licantropos e origem de Jader e Janna."],
+            ["1746 EC", "Campanha Atual – Endrick, Khrogan, Emma, Rudy, James, Alain."],
+            ["1746 EC", "Principais eventos — Visões do passado, Cristal da Vida, conflitos com viajantes, memórias emergem, Parlamento interfere, monstros petrificados."],
+            ["1736–1740 EC", "Confronto em Surass contra seita de transmutadores. Assassinato misterioso investigado. Descoberta de rituais envolvendo transmutação forçada de humanos."],
+            ["1746 EC", "Visões de Marceline e Ezio revelam pactos divinos com entidades elementares (água e eletricidade). Revelações sobre as experiências com licantropos e origem de Jader e Janna."],
         ]
     }
 ];
