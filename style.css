@@ -68,6 +68,7 @@ h1 {
     display: none;
     align-items: center;
     justify-content: center;
+    overflow-y: auto;
 }
 .modal-bg.active {
     display: flex;
@@ -84,6 +85,8 @@ h1 {
     font-size: 1.08rem;
     position: relative;
     animation: modalPop 0.2s;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 @keyframes modalPop {
     from { transform: scale(0.95); opacity: 0; }
@@ -116,6 +119,24 @@ h1 {
 .modal-event {
     margin-bottom: 14px;
     line-height: 1.6;
+    word-break: break-word;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+.event-date {
+    display: block;
+    font-weight: bold;
+    color: #b8860b;
+    margin-bottom: 2px;
+    word-break: break-word;
+}
+.event-desc {
+    display: block;
+    margin-left: 0;
+    color: #5a4327;
+    word-break: break-word;
+    text-align: justify;
 }
 .modal-event b {
     color: #b8860b;
@@ -166,17 +187,23 @@ h1 {
         padding: 12px 4vw;
     }
     .modal {
-        padding: 12px 2vw 10px 2vw;
-        max-width: 98vw;
-        max-height: 90vh;
-        font-size: 0.98rem;
-        overflow-y: auto;
+        padding: 12px 2vw 10px 2vw !important;
+        max-width: 98vw !important;
+        max-height: 90vh !important;
+        font-size: 0.98rem !important;
+        overflow-y: auto !important;
     }
     .modal-title {
         font-size: 1.08rem;
     }
     .modal-event {
         font-size: 0.97rem;
+        padding-left: 0.5vw;
+        padding-right: 0.5vw;
+    }
+    .event-date, .event-desc {
+        font-size: 0.97rem;
+        word-break: break-word;
     }
     .download-btn {
         font-size: 0.97rem;
